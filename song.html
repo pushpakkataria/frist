@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="song.css">
+</head>
+<body>
+    <div class="div1">
+        <a href="">librery</a>
+        <a href="">Home</a>
+        <a href="">sepcification</a>
+        <a href="">About</a>
+</div>
+<section class="music">
+<p>The <br> Real <br> Music</p>
+</section>
+<section class="play1">    
+    <p>click Here to listen... </p> 
+    <img src="play.png" id="icon">
+    </section>
+<p class="tho">Music theory as a practical discipline <br> encompasses the methods and concepts <br> that composers and other musicians use <br> in creating music</p>
+
+<audio id="tomi">
+    <source src="guru ka darshan.mp3" type="audio/mp3">
+</audio>
+<script>
+var tomi = document.getElementById("tomi");
+var icon = document.getElementById("icon");
+icon.onclick = function(){
+    if(tomi.pause){
+        tomi.play();
+        icon.src="pause.png";
+    }else{
+        tomi.pause();
+        icon.src="play.png";
+    }
+    
+}
+</script>
+</body>
+</html>
